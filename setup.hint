@@ -1,0 +1,7 @@
+category: Lua
+requires: cygwin lua libcairo2
+sdesc: "Lua cairo bindings"
+ldesc: "This project aims to provide a binding to the cairo 2D graphics 
+library. The tolua++ binding generator was used to create the basic 
+binding. It is already possible to translate the basic tutorials from C 
+to Lua and output PNG files."

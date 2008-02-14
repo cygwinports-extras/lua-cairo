@@ -1,0 +1,54 @@
+lua-cairo
+------------------------------------------
+This project aims to provide a binding to the cairo 2D graphics library. 
+The tolua++ binding generator was used to create the basic binding. It 
+is already possible to translate the basic tutorials from C to Lua and 
+output PNG files.
+
+Runtime requirements:
+  cygwin-1.5.25-7
+  libcairo2-1.4.14-1
+  lua-5.1.3-1
+
+Build requirements:
+  binutils-20060817-1
+  cygport-0.3.8-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+  pkg-config-0.21-1
+  tolua++-1.0.92-1
+
+Canonical website:
+  http://ORIGPN.luaforge.net/
+
+Canonical download:
+  http://luaforge.net/projects/
+
+-------------------------------------------
+
+Build instructions:
+  unpack lua-cairo-<pv>-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./lua-cairo-<pv>-X.cygport all
+
+This will create:
+  /usr/src/lua-cairo-<pv>-X-src.tar.bz2
+  /usr/src/lua-cairo-<pv>-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+
+------------------
+
+Port Notes:
+
+----- version <pv>-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

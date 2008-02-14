@@ -1,0 +1,24 @@
+inherit lua
+
+DESCRIPTION="Lua cairo bindings"
+HOMEPAGE="http://luaforge.net/projects/luacairo/"
+SRC_URI="http://luaforge.net/frs/download.php/2374/${PN/-}-${PV}.tgz"
+SRC_DIR="${PN/-}-${PV}"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake
+}
+
+src_test() {
+	cd ${B}
+	make test
+}
+
+src_install() {
+	cd ${B}
+
+	exeinto ${LUA_LIBDIR}
+	doexe cairo.dll
+}

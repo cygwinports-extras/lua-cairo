@@ -1,5 +1,5 @@
 category: Lua
-requires: cygwin lua libcairo2
+requires: lua libcairo2
 sdesc: "Lua cairo bindings"
 ldesc: "This project aims to provide a binding to the cairo 2D graphics 
 library. The tolua++ binding generator was used to create the basic 
